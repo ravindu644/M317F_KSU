@@ -6,5 +6,7 @@ export clang-triple = android/prebuilts/clang/host/linux-x86/clang-4639204/bin/a
 export ANDROID_MAJOR_VERSION=s
 export PLATFORM_VERSION=12
 
+make clean && make mrproper
+make menuconfig
 make exynos9610-m31snsxx_defconfig
 make -j64
